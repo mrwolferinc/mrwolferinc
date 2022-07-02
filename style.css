@@ -1,3 +1,7 @@
+.container > h2 + section {
+  margin-top: 1rem;
+}
+
 .list-inline-item:not(:last-child)::after {
   content: "\2022";
   margin-left: .5rem;
