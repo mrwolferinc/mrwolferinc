@@ -1,0 +1,33 @@
+.list-inline-item:not(:last-child)::after {
+  content: "\2022";
+  margin-left: .5rem;
+}
+
+.footer .social-nav-container {
+  flex-basis: 100%;
+}
+
+@media (min-width: 992px) {
+  .footer .social-nav-container {
+    flex-basis: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bs-dark) !important;
+    color: var(--bs-light) !important;
+  }
+
+  .footer {
+    border-color: var(--bs-gray-dark) !important;
+  }
+
+  .social-nav-link {
+    color: var(--bs-light) !important;
+  }
+
+  .social-nav-link:hover, .social-nav-link:focus {
+    color: #f9fafb !important;
+  }
+}
